@@ -30,13 +30,25 @@ class MainActivity : AppCompatActivity() {
             MotionEvent.ACTION_UP -> {
                 x2 = tochevent.x
                 y2 = tochevent.y
-                if (x1 < x2) {
-                    val i = Intent(this@MainActivity, scherm2::class.java)
-                    startActivity(i)
+
+                val deltaX = x2 - x1
+                val deltaY = y2 - y1
+
+                // Set a minimum threshold for swipe detection to avoid minor accidental movements.
+                val SWIPE_THRESHOLD = 100
+
+                // Check if the swipe was more horizontal than vertical and exceeds threshold
+                if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > SWIPE_THRESHOLD) {
+                    if (x1 < x2) {
+                        // Right swipe detected (left-to-right)
+                        val i = Intent(this@MainActivity, scherm2::class.java)
+                        startActivity(i)
+                    } else {
+                    }
                 }
             }
         }
-        return false
+        return super.onTouchEvent(tochevent)  // Use super to maintain other touch events
     }
 
 class MainActivity : AppCompatActivity() {
