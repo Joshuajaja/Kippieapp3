@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         findViewById<Button>(R.id.button).setOnClickListener{
-        val i = Intent(this@MainActivity, tabactivity::class.java)
+        val i = Intent(this@MainActivity, scherm2::class.java)
         startActivity(i)
         }
     }
