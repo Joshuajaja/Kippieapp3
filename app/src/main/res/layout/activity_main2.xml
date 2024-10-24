@@ -17,7 +17,7 @@
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="Kippie"
-        android:textColor="#ffa500"
+        android:textColor="@color/kippie"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
