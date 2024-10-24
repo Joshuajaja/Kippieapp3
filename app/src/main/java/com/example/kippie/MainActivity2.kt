@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class scherm2 : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
 
     internal var x1: Float = 0.toFloat()
     internal var x2: Float = 0.toFloat()
@@ -17,7 +17,7 @@ class scherm2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scherm2)
+        setContentView(R.layout.activity_main2)
     }
 
     override fun onTouchEvent(tochevent: MotionEvent): Boolean {
@@ -38,11 +38,11 @@ class scherm2 : AppCompatActivity() {
 
                 // Check if the swipe was more horizontal than vertical and exceeds threshold
                 if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > SWIPE_THRESHOLD) {
-                    if (x1 < x2) {
+                    if (x2 < x1) {
                         // Right swipe detected (left-to-right)
-                        val i = Intent(this@scherm2, MainActivity::class.java)
+                        val i = Intent(this@MainActivity2, MainActivity::class.java)
                         startActivity(i)
-                    } else if(x2 < x1) { val i = Intent(this@scherm2, MainActivity2::class.java)
+                    } else if (x1 < x2){val i = Intent(this@MainActivity2, scherm2::class.java)
                         startActivity(i)}
                 }
             }
@@ -50,15 +50,15 @@ class scherm2 : AppCompatActivity() {
         return super.onTouchEvent(tochevent)  // Use super to maintain other touch events
     }
 
-class scherm2 : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_scherm2)
+        setContentView(R.layout.activity_main2)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
     }
-} }
+}}

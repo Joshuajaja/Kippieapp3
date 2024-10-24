@@ -31,20 +31,21 @@ class MainActivity : AppCompatActivity() {
                 x2 = tochevent.x
                 y2 = tochevent.y
 
-                val deltaX = x2 - x1
-                val deltaY = y2 - y1
+                val deltaX = x2 - x1 // action down en up naar een link rechts converten
+                val deltaY = y2 - y1 // met wiskunde die ik niet begrijp
 
                 // Set a minimum threshold for swipe detection to avoid minor accidental movements.
-                val SWIPE_THRESHOLD = 100
+                val SWIPE_THRESHOLD = 50
 
                 // Check if the swipe was more horizontal than vertical and exceeds threshold
                 if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > SWIPE_THRESHOLD) {
-                    if (x1 < x2) {
+                    if (x2 < x1) {
                         // Right swipe detected (left-to-right)
                         val i = Intent(this@MainActivity, scherm2::class.java)
                         startActivity(i)
-                    } else {
-                    }
+                    } else if (x1 < x2) {
+                        val r = Intent(this@MainActivity, MainActivity2::class.java)
+                        startActivity(r)}
                 }
             }
         }
@@ -60,10 +61,6 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
-        findViewById<Button>(R.id.button).setOnClickListener{
-        val d = Intent(this@MainActivity, scherm2::class.java)
-        startActivity(d)
         }
     }
 }}
