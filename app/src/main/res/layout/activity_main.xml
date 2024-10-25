@@ -10,7 +10,6 @@
     tools:context=".MainActivity">
 
 
-
     <TextView
         android:id="@+id/title"
         android:layout_width="420dp"
@@ -18,7 +17,7 @@
         android:background="#000000"
         android:fontFamily="monospace"
         android:gravity="center"
-        android:text="Kippie"
+        android:text="KIPPIE"
         android:textColor="@color/kippie"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
