@@ -9,6 +9,8 @@
     android:background="#000000"
     tools:context=".MainActivity">
 
+
+
     <TextView
         android:id="@+id/title"
         android:layout_width="420dp"
@@ -46,48 +48,73 @@
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="373dp"
-        android:layout_height="441dp"
-        app:srcCompat="@drawable/redbull_schaduw_800x800"
-        tools:layout_editor_absoluteX="-69dp"
-        tools:layout_editor_absoluteY="121dp" />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="136dp"
+        android:layout_height="358dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418"
+        app:srcCompat="@drawable/redbull_schaduw_800x800" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="240dp"
-        android:layout_height="253dp"
-        app:srcCompat="@drawable/piripirisaus_schaduw_800x800"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="250dp" />
+        android:layout_width="213dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:srcCompat="@drawable/piripirisaus_schaduw_800x800" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="288dp"
         android:layout_height="306dp"
-        app:srcCompat="@drawable/broodje_kipburger_schaduw_800x800"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="315dp" />
+        app:layout_constraintBottom_toTopOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        app:srcCompat="@drawable/broodje_kipburger_schaduw_800x800" />
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="154dp"
         android:layout_height="56dp"
         android:text="Acties"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
         android:textSize="45sp"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="78dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="300dp"
-        android:layout_height="65dp"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:fontFamily="monospace"
         android:text="Ziekenhuis deal"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="596dp" />
+        android:textColor="@color/black"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
