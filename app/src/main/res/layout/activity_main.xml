@@ -24,6 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Second rectangle (Black rectangle) -->
+
     <View
         android:id="@+id/rectangle2"
         android:layout_width="407dp"
@@ -31,7 +32,6 @@
         android:background="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintVertical_bias="0.0" />
@@ -46,17 +46,48 @@
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="207dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rectangle2" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="373dp"
+        android:layout_height="441dp"
+        app:srcCompat="@drawable/redbull_schaduw_800x800"
+        tools:layout_editor_absoluteX="-69dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="240dp"
+        android:layout_height="253dp"
+        app:srcCompat="@drawable/piripirisaus_schaduw_800x800"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="288dp"
+        android:layout_height="306dp"
+        app:srcCompat="@drawable/broodje_kipburger_schaduw_800x800"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:text="Acties"
+        android:textSize="45sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:text="Ziekenhuis deal"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="596dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
