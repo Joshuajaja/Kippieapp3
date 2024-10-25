@@ -3,6 +3,10 @@
     <style name="Base.Theme.Kippie" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">#03DAC5</item> <!-- idk wat dit doet -->
+
     </style>
 
     <style name="Theme.Kippie" parent="Base.Theme.Kippie" />
