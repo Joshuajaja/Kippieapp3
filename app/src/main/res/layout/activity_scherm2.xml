@@ -35,6 +35,22 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <!-- Second rectangle (Black rectangle) -->
+
+    <view
+        android:id="@+id/view3"
+        class="android.widget.ActionMenuView"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+    android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_constraintVertical_bias="0.191" />
+
     <View
         android:id="@+id/rectangle"
         android:layout_width="413dp"
@@ -47,12 +63,52 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="scherm2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fontFamily="monospace"
+        android:text="Kippie pannen"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <ScrollView
+        android:layout_width="374dp"
+        android:layout_height="488dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
