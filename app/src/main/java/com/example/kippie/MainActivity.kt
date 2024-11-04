@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.MotionEvent
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,10 +17,6 @@ class MainActivity : AppCompatActivity() {
     internal var y1: Float = 0.toFloat()
     internal var y2: Float = 0.toFloat()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
 
     override fun onTouchEvent(tochevent: MotionEvent): Boolean {
         when (tochevent.action) {
@@ -52,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         return super.onTouchEvent(tochevent)  // Use super to maintain other touch events
     }
 
-class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -62,5 +59,20 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val buttonClick = findViewById<ImageButton>(R.id.witmenuhome)
+        buttonClick.setOnClickListener {
+            val intent = Intent(this, scherm2::class.java)
+            startActivity(intent)
+        }
+
+        val buttonClick2 = findViewById<ImageButton>(R.id.witkarretjehome)
+        buttonClick2.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
+        }
     }
-}}
+}
+
+
+

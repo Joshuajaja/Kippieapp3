@@ -3,6 +3,7 @@ package com.example.kippie
 import android.content.Intent
 import android.os.Bundle
 import android.view.MotionEvent
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -60,5 +61,19 @@ class scherm2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val buttonClick = findViewById<ImageButton>(R.id.withuisjemenu)
+        buttonClick.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        val buttonClick2 = findViewById<ImageButton>(R.id.imageButton5)
+        buttonClick2.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
+        }
+
+
     }
 } }

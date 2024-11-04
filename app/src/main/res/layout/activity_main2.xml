@@ -57,4 +57,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
+    <ImageView
+        android:id="@+id/withuisjecart"
+        android:layout_width="83dp"
+        android:layout_height="78dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110322"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="707dp" />
+
+    <ImageView
+        android:id="@+id/witmenucart"
+        android:layout_width="83dp"
+        android:layout_height="78dp"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110212"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="707dp" />
+
+    <ImageView
+        android:id="@+id/geelkarretje"
+        android:layout_width="83dp"
+        android:layout_height="78dp"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110349"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="707dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

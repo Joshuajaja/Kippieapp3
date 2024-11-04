@@ -55,4 +55,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:id="@+id/withuisjemenu"
+        android:layout_width="111dp"
+        android:layout_height="101dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110322"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="689dp" />
+
+    <ImageButton
+        android:id="@+id/geelmenu"
+        android:layout_width="96dp"
+        android:layout_height="84dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110251"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="694dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="101dp"
+        android:layout_height="97dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110229"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="689dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
