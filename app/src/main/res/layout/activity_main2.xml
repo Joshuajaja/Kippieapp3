@@ -57,29 +57,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
-    <ImageView
-        android:id="@+id/withuisjecart"
-        android:layout_width="83dp"
-        android:layout_height="78dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/screenshot_2024_11_04_110322"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="707dp" />
-
-    <ImageView
-        android:id="@+id/witmenucart"
-        android:layout_width="83dp"
-        android:layout_height="78dp"
-        app:srcCompat="@drawable/screenshot_2024_11_04_110212"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="707dp" />
-
-    <ImageView
+    <ImageButton
         android:id="@+id/geelkarretje"
-        android:layout_width="83dp"
-        android:layout_height="78dp"
-        app:srcCompat="@drawable/screenshot_2024_11_04_110349"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="707dp" />
+        android:layout_width="122dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/witmenucart"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110349" />
+
+    <ImageButton
+        android:id="@+id/witmenucart"
+        android:layout_width="94dp"
+        android:layout_height="86dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110212" />
+
+    <ImageButton
+        android:id="@+id/withuisjecart"
+        android:layout_width="104dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/witmenucart"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110322" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

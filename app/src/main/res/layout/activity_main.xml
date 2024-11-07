@@ -9,6 +9,42 @@
     tools:context=".MainActivity">
 
 
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="413dp"
+        android:layout_height="71dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/rectangle2"
+        android:layout_width="407dp"
+        android:layout_height="612dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:fontFamily="monospace"
+        android:text="Ziekenhuis deal"
+        android:textColor="@color/black"
+        android:textSize="37sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
     <TextView
         android:id="@+id/title"
         android:layout_width="420dp"
@@ -24,28 +60,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Second rectangle (Black rectangle) -->
-
-    <View
-        android:id="@+id/rectangle2"
-        android:layout_width="407dp"
-        android:layout_height="612dp"
-        android:background="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="0.655" />
-
-    <View
-        android:id="@+id/rectangle"
-        android:layout_width="413dp"
-        android:layout_height="71dp"
-        android:background="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
     <ImageView
@@ -99,49 +113,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.115" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="338dp"
-        android:layout_height="59dp"
-        android:fontFamily="monospace"
-        android:text="Ziekenhuis deal"
-        android:textColor="@color/black"
-        android:textSize="37sp"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
-
     <ImageButton
         android:id="@+id/geelhome"
         android:layout_width="83dp"
         android:layout_height="78dp"
+        android:layout_marginTop="1dp"
         android:backgroundTint="#000000"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/home_geel"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="707dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/witmenuhome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/home_geel" />
 
     <ImageButton
         android:id="@+id/witmenuhome"
         android:layout_width="83dp"
         android:layout_height="78dp"
+        android:layout_marginTop="1dp"
         android:backgroundTint="#050505"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/screenshot_2024_11_04_110212"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="707dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110212" />
 
     <ImageButton
         android:id="@+id/witkarretjehome"
         android:layout_width="83dp"
         android:layout_height="78dp"
+        android:layout_marginTop="1dp"
         android:backgroundTint="#000000"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/screenshot_2024_11_04_110229"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="707dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/witmenuhome"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/screenshot_2024_11_04_110229" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
