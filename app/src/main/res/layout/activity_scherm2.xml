@@ -9,6 +9,8 @@
     android:background="#000000"
     tools:context=".MainActivity">
 
+
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -40,21 +42,6 @@
 
     <!-- Second rectangle (Black rectangle) -->
 
-    <view
-        android:id="@+id/view3"
-        class="android.widget.ActionMenuView"
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-    android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:background="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/title"
-        app:layout_constraintVertical_bias="0.191" />
-
     <View
         android:id="@+id/rectangle"
         android:layout_width="413dp"
@@ -73,13 +60,28 @@
         android:gravity="center"
         android:text="Ons assortiment"
         android:textColor="@color/black"
-        android:textSize="45sp"
+        android:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.115" />
+
+    <view
+        android:id="@+id/view6"
+        class="android.widget.ActionMenuView"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_constraintVertical_bias="0.182" />
 
     <ScrollView
         android:layout_width="374dp"
@@ -106,15 +108,16 @@
                     android:layout_height="150dp"
                     app:srcCompat="@drawable/minisateballenpanxxl" />
 
-                <TextView
-                    android:id="@+id/textView7"
+                <Button
+                    android:id="@+id/hapjespannen"
                     android:layout_width="224dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
                     android:fontFamily="monospace"
-                    android:gravity="center_vertical"
                     android:text="Hapjes pannen"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="30dp" />
+
             </TableRow>
 
             <TableRow
@@ -125,19 +128,19 @@
                     android:id="@+id/imageView90"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    app:srcCompat="@drawable/minisateballenpanxxl" />
+                    app:srcCompat="@drawable/kippievegamaaltijdpan" />
 
-
-
-                <TextView
-                    android:id="@+id/textView55"
+                <Button
+                    android:id="@+id/Maaltijdpannen"
                     android:layout_width="224dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
                     android:fontFamily="monospace"
-                    android:gravity="center_vertical"
-                    android:textSize="25dp"
-                    android:text="Hapjes pannen"
-                    android:textColor="@color/black" />
+                    android:text="Maaltijd pannen"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" /> />
+
+
             </TableRow>
 
             <TableRow
@@ -148,17 +151,17 @@
                     android:id="@+id/imageView9"
                     android:layout_width="50dp"
                     android:layout_height="150dp"
-                    app:srcCompat="@drawable/minisateballenpanxxl" />
+                    app:srcCompat="@drawable/satepanpiri" />
 
-                <TextView
-                    android:id="@+id/textView5"
+                <Button
+                    android:id="@+id/Vleespannen"
                     android:layout_width="224dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
                     android:fontFamily="monospace"
-                    android:gravity="center_vertical"
-                    android:text="Hapjes pannen"
+                    android:text="Vlees pannen"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="30dp" />
             </TableRow>
 
             <TableRow
@@ -169,17 +172,17 @@
                     android:id="@+id/imageView10"
                     android:layout_width="50dp"
                     android:layout_height="150dp"
-                    app:srcCompat="@drawable/minisateballenpanxxl" />
+                    app:srcCompat="@drawable/aardappelpan" />
 
-                <TextView
-                    android:id="@+id/textView6"
+                <Button
+                    android:id="@+id/Vegapannen"
                     android:layout_width="224dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
                     android:fontFamily="monospace"
-                    android:gravity="center_vertical"
-                    android:text="Hapjes pannen"
+                    android:text="Vega pannen"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="30dp" />
             </TableRow>
 
             <TableRow
@@ -190,17 +193,17 @@
                     android:id="@+id/imageView12"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    app:srcCompat="@drawable/minisateballenpanxxl" />
+                    app:srcCompat="@drawable/knakpanxxl" />
 
-                <TextView
-                    android:id="@+id/textView8"
+                <Button
+                    android:id="@+id/XXLpannen"
                     android:layout_width="224dp"
                     android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
                     android:fontFamily="monospace"
-                    android:gravity="center_vertical"
-                    android:text="Hapjes pannen"
+                    android:text="XXL pannen"
                     android:textColor="@color/black"
-                    android:textSize="25dp" />
+                    android:textSize="30dp" />
             </TableRow>
         </TableLayout>
     </ScrollView>
