@@ -7,4 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".Kippiepannen">
 
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="190dp"
+        android:layout_height="99dp"
+        android:text="TEST"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="164dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
