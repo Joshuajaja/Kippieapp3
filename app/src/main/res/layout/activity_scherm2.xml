@@ -9,6 +9,12 @@
     android:background="#000000"
     tools:context=".MainActivity">
 
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <TextView
         android:id="@+id/title"
         android:layout_width="420dp"
@@ -16,7 +22,7 @@
         android:background="#000000"
         android:fontFamily="monospace"
         android:gravity="center"
-        android:text="Kippie"
+        android:text="KIPPIE"
         android:textColor="@color/kippie"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,13 +54,160 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="scherm2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Ons assortiment"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <view
+        android:id="@+id/view6"
+        class="android.widget.ActionMenuView"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <ScrollView
+        android:layout_width="374dp"
+        android:layout_height="488dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/minisateballenpanxxl" />
+
+                <Button
+                    android:id="@+id/hapjespannen"
+                    android:layout_width="224dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="Hapjes pannen"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView90"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/kippievegamaaltijdpan" />
+
+                <Button
+                    android:id="@+id/Maaltijdpannen"
+                    android:layout_width="224dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="Maaltijd pannen"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" /> />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="50dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/satepanpiri" />
+
+                <Button
+                    android:id="@+id/Vleespannen"
+                    android:layout_width="224dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="Vlees pannen"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="50dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/aardappelpan" />
+
+                <Button
+                    android:id="@+id/Vegapannen"
+                    android:layout_width="224dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="Vega pannen"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/knakpanxxl" />
+
+                <Button
+                    android:id="@+id/XXLpannen"
+                    android:layout_width="224dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="XXL pannen"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
 
     <ImageButton
         android:id="@+id/withuisjemenu"
