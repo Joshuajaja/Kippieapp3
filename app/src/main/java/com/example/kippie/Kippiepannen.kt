@@ -26,22 +26,22 @@ class Kippiepannen : AppCompatActivity() {
         }
         fun loadmaaltijd() {
             // Load specific admin features, e.g., setting visibility of admin-only views
-            val maaltijd = findViewById<View>(R.id.changethis)
+            val maaltijd = findViewById<View>(R.id.maaltijd)
             maaltijd.visibility = View.VISIBLE
         }
         fun loadvlees() {
             // Load specific admin features, e.g., setting visibility of admin-only views
-            val vlees = findViewById<View>(R.id.changethis)
+            val vlees = findViewById<View>(R.id.vlees)
             vlees.visibility = View.VISIBLE
         }
         fun loadvega() {
             // Load specific admin features, e.g., setting visibility of admin-only views
-            val vega = findViewById<View>(R.id.changethis)
+            val vega = findViewById<View>(R.id.vega)
             vega.visibility = View.VISIBLE
         }
         fun loadXXL() {
             // Load specific admin features, e.g., setting visibility of admin-only views
-            val XXL = findViewById<View>(R.id.changethis)
+            val XXL = findViewById<View>(R.id.xxl)
             XXL.visibility = View.VISIBLE
         }
 
