@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,7 +7,6 @@
     android:layout_height="match_parent"
     android:background="#000000"
     tools:context=".MainActivity">
-
 
 
     <TableRow
@@ -56,11 +54,11 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="55dp"
+        android:autoSizeTextType="uniform"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="Ons assortiment"
         android:textColor="@color/black"
-        android:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.703"
@@ -100,7 +98,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView11"
@@ -138,7 +136,8 @@
                     android:fontFamily="monospace"
                     android:text="Maaltijd pannen"
                     android:textColor="@color/black"
-                    android:textSize="30dp" /> />
+                    android:textSize="30dp" />
+                />
 
 
             </TableRow>
@@ -187,7 +186,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView12"
