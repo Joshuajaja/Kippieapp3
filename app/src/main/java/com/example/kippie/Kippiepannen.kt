@@ -48,13 +48,14 @@ class Kippiepannen : AppCompatActivity() {
         if (pantype == "hapjes") {
             loadhapjes()
         } else if (pantype == "maaltijdpannen") {
-            loadmaaltijd() } else if (pantype == "vleespannen"){
+            loadmaaltijd() }
+        else if (pantype == "Vleespannen"){
                 loadvlees()
         }
-        else if (pantype == "vegapannen"){
+        else if (pantype == "Vegapannen"){
             loadvega()
         }
-        else if (pantype == "XXLpannen"){
+        else if (pantype == "XXLpan"){
             loadXXL()
         }
         }
