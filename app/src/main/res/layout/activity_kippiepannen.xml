@@ -5,7 +5,44 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Kippiepannen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="420dp"
+        android:layout_height="78dp"
+        android:background="#000000"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="KIPPIE"
+        android:textColor="@color/kippie"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle2"
+        android:layout_width="407dp"
+        android:layout_height="612dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="413dp"
+        android:layout_height="71dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
     <TextView
         android:id="@+id/test"
