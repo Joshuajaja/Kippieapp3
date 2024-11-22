@@ -50,7 +50,11 @@ class scherm2 : AppCompatActivity() {
             intent.putExtra("pantype", "Vleespannen")
             startActivity(intent)
         }
-
+        findViewById<Button>(R.id.Vleespannen).setOnClickListener {
+            val intent = Intent(this@scherm2, Kippiepannen::class.java)
+            intent.putExtra("pantype", "Vleespannen")
+            startActivity(intent)
+        }
         findViewById<Button>(R.id.Vegapannen).setOnClickListener {
             val intent = Intent(this@scherm2, Kippiepannen::class.java)
             intent.putExtra("pantype", "Vegapannen")
@@ -63,6 +67,8 @@ class scherm2 : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+
 
     override fun onTouchEvent(touchevent: MotionEvent): Boolean {
         when (touchevent.action) {

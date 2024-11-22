@@ -20,7 +20,7 @@ class Kippiepannen : AppCompatActivity() {
         val pantype = intent.getStringExtra("pantype")  // Retrieve the String extra
 
         fun loadhapjes() {
-            val hapjespan = findViewById<View>(R.id.test)
+            val hapjespan = findViewById<View>(R.id.imageknak)
             hapjespan.visibility = View.VISIBLE
         }
         fun loadmaaltijd() {
