@@ -97,7 +97,8 @@
     <ImageButton
         android:id="@+id/witkarretjehome"
         android:layout_width="112dp"
-        android:layout_height="102dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#000000"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -168,6 +169,76 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/screenshot_2024_11_04_110212" />
+
+        <!-- Floating action button for add alarm -->
+        <!-- Make sure that you are constraining this
+             button to the parent button -->
+
+        <!-- Action name text for the add alarm button -->
+        <!-- Make sure that you are constraining this Text to
+             the add Alarm FAB button -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="4dp"
+            app:backgroundTint="@color/kippie"
+            app:fabSize="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_alarm_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_person_fab"
+            app:layout_constraintVertical_bias="0.0"
+            app:backgroundTint="@color/kippie"/>
+
+        <TextView
+            android:id="@+id/add_alarm_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/add_alarm_fab"
+            app:layout_constraintEnd_toStartOf="@+id/add_alarm_fab"
+            app:layout_constraintTop_toTopOf="@+id/add_alarm_fab" />
+
+        <!-- Floating action button for add person -->
+        <!-- Make sure that you are constraining this
+             button to the add Alarm FAB button -->
+
+        <!-- Action name text for the add person button -->
+        <!-- Make sure that you are constraining this Text
+             to the add Person FAB button -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_person_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="4dp"
+            app:fabSize="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FloatingActionButton"
+            app:backgroundTint="@color/kippie"/>
+
+        <TextView
+            android:id="@+id/add_person_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/add_person_fab"
+            app:layout_constraintEnd_toStartOf="@+id/add_person_fab"
+            app:layout_constraintTop_toTopOf="@+id/add_person_fab" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

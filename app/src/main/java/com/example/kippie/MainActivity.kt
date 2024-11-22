@@ -3,12 +3,16 @@ package com.example.kippie
 import android.content.Intent
 import android.os.Bundle
 import android.view.MotionEvent
-import android.widget.Button
+import android.view.View
 import android.widget.ImageButton
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -49,7 +53,15 @@ class MainActivity : AppCompatActivity() {
         return super.onTouchEvent(tochevent)  // Use super to maintain other touch events
     }
 
+    // Make sure to use the FloatingActionButton for all the FABs
+    private lateinit var mAddFab: FloatingActionButton
+    private lateinit var mAddAlarmFab: FloatingActionButton
+    private lateinit var mAddPersonFab: FloatingActionButton
 
+
+
+    // to check whether sub FAB buttons are visible or not.
+    private var isAllFabsVisible: Boolean? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -58,6 +70,60 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        // Register all the FABs with their IDs This FAB button is the Parent
+        mAddFab = findViewById(R.id.FloatingActionButton)
+
+        // FAB button
+        mAddAlarmFab = findViewById(R.id.add_alarm_fab)
+        mAddPersonFab = findViewById(R.id.add_person_fab)
+
+        // Also register the action name text, of all the FABs.
+        mAddAlarmFab.visibility = View.GONE
+        mAddPersonFab.visibility = View.GONE
+
+        // make the boolean     variable as false, as all the
+        // action name texts and all the sub FABs are invisible
+        isAllFabsVisible = false
+
+        // We will make all the FABs and action name texts
+        // visible only when Parent FAB button is clicked So
+        // we have to handle the Parent FAB button first, by
+        // using setOnClickListener you can see below
+        mAddFab.setOnClickListener(View.OnClickListener {
+            (if (!isAllFabsVisible!!) {
+                // when isAllFabsVisible becomes true make all
+                // the action name texts and FABs VISIBLE
+                mAddAlarmFab.show()
+                mAddPersonFab.show()
+
+
+                // make the boolean variable true as we
+                // have set the sub FABs visibility to GONE
+                true
+            } else {
+                // when isAllFabsVisible becomes true make
+                // all the action name texts and FABs GONE.
+                mAddAlarmFab.hide()
+                mAddPersonFab.hide()
+
+
+                // make the boolean variable false as we
+                // have set the sub FABs visibility to GONE
+                false
+            }).also { isAllFabsVisible = it }
+        })
+        // below is the sample action to handle add person FAB. Here it shows simple Toast msg.
+        // The Toast will be shown only when they are visible and only when user clicks on them
+        mAddPersonFab.setOnClickListener {
+            Toast.makeText(this, "Person Added", Toast.LENGTH_SHORT).show()
+        }
+
+        // below is the sample action to handle add alarm FAB. Here it shows simple Toast msg
+        // The Toast will be shown only when they are visible and only when user clicks on them
+        mAddAlarmFab.setOnClickListener {
+            Toast.makeText(this, "Alarm Added", Toast.LENGTH_SHORT).show()
         }
 
         val buttonClick = findViewById<ImageButton>(R.id.witmenuhome)
@@ -70,9 +136,16 @@ class MainActivity : AppCompatActivity() {
         buttonClick2.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
+
+            val fab: View = findViewById(R.id.FloatingActionButton)
+            fab.setOnClickListener { view ->
+                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null)
+                    .show()
+            }
         }
     }
-}
+    }
 
 
 
