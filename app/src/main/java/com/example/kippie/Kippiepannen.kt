@@ -20,24 +20,36 @@ class Kippiepannen : AppCompatActivity() {
         val pantype = intent.getStringExtra("pantype")  // Retrieve the String extra
 
         fun loadhapjes() {
-            val hapjespan = findViewById<View>(R.id.imageknak)
+            val hapjespan = findViewById<View>(R.id.antikluif)
             hapjespan.visibility = View.VISIBLE
+            val hapjespan2 = findViewById<View>(R.id.antikluif2)
+            hapjespan2.visibility = View.VISIBLE
+            val hapjespan3 = findViewById<View>(R.id.antikluiftext)
+            hapjespan3.visibility = View.VISIBLE
+            val hapjespan4 = findViewById<View>(R.id.antikluiftext2)
+            hapjespan4.visibility = View.VISIBLE
         }
         fun loadmaaltijd() {
-            val maaltijd = findViewById<View>(R.id.maaltijd)
-            maaltijd.visibility = View.VISIBLE
+       //     val maaltijd = findViewById<View>(R.id.)
+      //      maaltijd.visibility = View.VISIBLE
         }
         fun loadvlees() {
-            val vlees = findViewById<View>(R.id.vlees)
-            vlees.visibility = View.VISIBLE
+  //          val vlees = findViewById<View>(R.id.vlees)
+         //   vlees.visibility = View.VISIBLE
         }
         fun loadvega() {
-            val vega = findViewById<View>(R.id.vega)
-            vega.visibility = View.VISIBLE
+           val vega = findViewById<View>(R.id.imageaardappel)
+           vega.visibility = View.VISIBLE
+            val vega2 = findViewById<View>(R.id.aardappelpan)
+            vega2.visibility = View.VISIBLE
+            val vega3 = findViewById<View>(R.id.maaltijdpan)
+            vega3.visibility = View.VISIBLE
+            val vega4 = findViewById<View>(R.id.maaltijdpantext)
+            vega4.visibility = View.VISIBLE
         }
         fun loadXXL() {
-            val XXL = findViewById<View>(R.id.xxl)
-            XXL.visibility = View.VISIBLE
+     //       val XXL = findViewById<View>(R.id.xxl)
+    //        XXL.visibility = View.VISIBLE
         }
 
         if (pantype == "hapjes") {

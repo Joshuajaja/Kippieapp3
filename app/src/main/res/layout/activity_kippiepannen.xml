@@ -116,34 +116,103 @@
         app:srcCompat="@drawable/aardappelpan" />
 
     <ImageView
-        android:id="@+id/imageknak"
+        android:id="@+id/antikluif"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:visibility="invisible"
-        app:srcCompat="@drawable/knakpanxxl"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="290dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@drawable/antikluifschotel" />
+
+    <ImageView
+        android:id="@+id/antikluif2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        app:srcCompat="@drawable/antikluifschotel2" />
+
+    <ImageView
+        android:id="@+id/maaltijdpan"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        app:srcCompat="@drawable/kippievegamaaltijdpan" />
 
     <TextView
         android:id="@+id/aardappelpan"
-        android:layout_width="221dp"
-        android:layout_height="75dp"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
         android:text="Aardappel pan"
+        android:textColor="@color/black"
         android:visibility="invisible"
         app:autoSizeTextType="uniform"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="175dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
 
     <TextView
-        android:id="@+id/knakpan"
-        android:layout_width="236dp"
-        android:layout_height="78dp"
-        android:text="Knak pan"
-        android:textSize="37sp"
+        android:id="@+id/antikluiftext"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:text="antikluif schotel"
+        android:textColor="@color/black"
         android:visibility="invisible"
-        app:autoSizeTextType="none"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="326dp" />
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <TextView
+        android:id="@+id/maaltijdpantext"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:text="Maaltijd pan"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/antikluiftext2"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:text="antikluif schotel"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
