@@ -135,6 +135,13 @@ class MainActivity : AppCompatActivity() {
                     .show()
             }
         }
+
+        val buttonClick5 = findViewById<ImageButton>(R.id.add_person_fab)
+        buttonClick5.setOnClickListener {
+            val intent = Intent(this, account::class.java)
+            startActivity(intent)
+        }
+
     }
     }
 
