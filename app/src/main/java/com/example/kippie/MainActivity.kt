@@ -116,15 +116,6 @@ class MainActivity : AppCompatActivity() {
         })
         // below is the sample action to handle add person FAB. Here it shows simple Toast msg.
         // The Toast will be shown only when they are visible and only when user clicks on them
-        mAddPersonFab.setOnClickListener {
-            Toast.makeText(this, "Person Added", Toast.LENGTH_SHORT).show()
-        }
-
-        // below is the sample action to handle add alarm FAB. Here it shows simple Toast msg
-        // The Toast will be shown only when they are visible and only when user clicks on them
-        mAddAlarmFab.setOnClickListener {
-            Toast.makeText(this, "Alarm Added", Toast.LENGTH_SHORT).show()
-        }
 
         val buttonClick = findViewById<ImageButton>(R.id.witmenuhome)
         buttonClick.setOnClickListener {
