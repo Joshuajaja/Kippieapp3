@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
 import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -138,7 +136,7 @@ class MainActivity : AppCompatActivity() {
 
         val buttonClick5 = findViewById<ImageButton>(R.id.add_person_fab)
         buttonClick5.setOnClickListener {
-            val intent = Intent(this, account::class.java)
+            val intent = Intent(this, about::class.java)
             startActivity(intent)
         }
 
