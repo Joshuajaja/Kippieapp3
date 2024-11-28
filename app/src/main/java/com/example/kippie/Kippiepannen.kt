@@ -30,12 +30,24 @@ class Kippiepannen : AppCompatActivity() {
             hapjespan4.visibility = View.VISIBLE
         }
         fun loadmaaltijd() {
-       //     val maaltijd = findViewById<View>(R.id.)
-      //      maaltijd.visibility = View.VISIBLE
+           val maaltijd = findViewById<View>(R.id.maaltijdpan)
+           maaltijd.visibility = View.VISIBLE
+            val maaltijd2 = findViewById<View>(R.id.maaltijdpantext)
+            maaltijd2.visibility = View.VISIBLE
+            val maaltijd3 = findViewById<View>(R.id.nasipan)
+            maaltijd3.visibility = View.VISIBLE
+            val maaltijd4 = findViewById<View>(R.id.nasipantext)
+            maaltijd4.visibility = View.VISIBLE
         }
         fun loadvlees() {
-  //          val vlees = findViewById<View>(R.id.vlees)
-         //   vlees.visibility = View.VISIBLE
+            val vlees = findViewById<View>(R.id.satepanketjap)
+            vlees.visibility = View.VISIBLE
+            val vlees2 = findViewById<View>(R.id.satepanketjaptext)
+            vlees2.visibility = View.VISIBLE
+            val vlees3 = findViewById<View>(R.id.kippelingpan)
+            vlees3.visibility = View.VISIBLE
+                val vlees4 = findViewById<View>(R.id.kippelingtext)
+            vlees4.visibility = View.VISIBLE
         }
         fun loadvega() {
            val vega = findViewById<View>(R.id.imageaardappel)
@@ -48,8 +60,14 @@ class Kippiepannen : AppCompatActivity() {
             vega4.visibility = View.VISIBLE
         }
         fun loadXXL() {
-     //       val XXL = findViewById<View>(R.id.xxl)
-    //        XXL.visibility = View.VISIBLE
+            val xxl = findViewById<View>(R.id.knakpanXxl)
+            xxl.visibility = View.VISIBLE
+            val xxl2 = findViewById<View>(R.id.knakpanxxltext)
+            xxl2.visibility = View.VISIBLE
+            val xxl3 = findViewById<View>(R.id.snackpanXxl)
+            xxl3.visibility = View.VISIBLE
+            val xxl4 = findViewById<View>(R.id.snackpanXxltext)
+            xxl4.visibility = View.VISIBLE
         }
 
         if (pantype == "hapjes") {

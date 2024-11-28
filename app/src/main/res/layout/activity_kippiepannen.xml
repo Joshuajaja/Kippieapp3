@@ -129,6 +129,45 @@
         app:srcCompat="@drawable/antikluifschotel" />
 
     <ImageView
+        android:id="@+id/nasipan"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@drawable/nasipan" />
+
+    <ImageView
+        android:id="@+id/satepanketjap"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@drawable/satepanketjap" />
+
+    <ImageView
+        android:id="@+id/snackpanXxl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@drawable/snackpanxxl" />
+
+    <ImageView
         android:id="@+id/antikluif2"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -155,6 +194,34 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.495"
         app:srcCompat="@drawable/kippievegamaaltijdpan" />
+
+    <ImageView
+        android:id="@+id/kippelingpan"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        app:srcCompat="@drawable/kippelingpan" />
+
+    <ImageView
+        android:id="@+id/knakpanXxl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        app:srcCompat="@drawable/knakpanxxl" />
 
     <TextView
         android:id="@+id/aardappelpan"
@@ -187,6 +254,51 @@
         app:layout_constraintVertical_bias="0.265" />
 
     <TextView
+        android:id="@+id/nasipantext"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:text="Nasi pan"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <TextView
+        android:id="@+id/satepanketjaptext"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:text="Satepan ketjap"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <TextView
+        android:id="@+id/snackpanXxltext"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:text="Snackpan XXL"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <TextView
         android:id="@+id/maaltijdpantext"
         android:layout_width="173dp"
         android:layout_height="55dp"
@@ -205,6 +317,34 @@
         android:layout_width="173dp"
         android:layout_height="55dp"
         android:text="antikluif schotel"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kippelingtext"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:text="Kippeling pan"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/knakpanxxltext"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:text="Knakpan XXL"
         android:textColor="@color/black"
         android:visibility="invisible"
         app:autoSizeTextType="uniform"
