@@ -8,6 +8,8 @@
     android:background="@color/black"
     tools:context=".Kippiepannen">
 
+
+
     <TextView
         android:id="@+id/title"
         android:layout_width="420dp"
@@ -223,136 +225,148 @@
         app:layout_constraintVertical_bias="0.495"
         app:srcCompat="@drawable/knakpanxxl" />
 
-    <TextView
-        android:id="@+id/aardappelpan"
-        android:layout_width="173dp"
+    <Button
+        android:id="@+id/aardappelpanbutton"
+        android:layout_width="200dp"
         android:layout_height="55dp"
-        android:text="Aardappel pan"
+        android:layout_marginTop="184dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
+        android:text="Aardappel Pan"
         android:textColor="@color/black"
         android:visibility="invisible"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/antikluiftext"
-        android:layout_width="173dp"
+    <Button
+        android:id="@+id/antikluifbutton"
+        android:layout_width="200dp"
         android:layout_height="55dp"
-        android:text="antikluif schotel"
+        android:layout_marginTop="184dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
+        android:text="Antikluif schotel"
         android:textColor="@color/black"
         android:visibility="invisible"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/nasipantext"
-        android:layout_width="173dp"
+    <Button
+        android:id="@+id/nasipanbutton"
+        android:layout_width="200dp"
         android:layout_height="55dp"
+        android:layout_marginTop="184dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
         android:text="Nasi pan"
         android:textColor="@color/black"
         android:visibility="invisible"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/satepanketjaptext"
-        android:layout_width="173dp"
+    <Button
+        android:id="@+id/satepanketjapbutton"
+        android:layout_width="200dp"
         android:layout_height="55dp"
+        android:layout_marginTop="184dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
         android:text="Satepan ketjap"
         android:textColor="@color/black"
         android:visibility="invisible"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/snackpanXxltext"
-        android:layout_width="173dp"
+    <Button
+        android:id="@+id/SnackpanXxlbutton"
+        android:layout_width="200dp"
         android:layout_height="55dp"
+        android:layout_marginTop="184dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
         android:text="Snackpan XXL"
         android:textColor="@color/black"
         android:visibility="invisible"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/maaltijdpantext"
-        android:layout_width="173dp"
+    <Button
+        android:id="@+id/antikluifbutton2"
+        android:layout_width="200dp"
         android:layout_height="55dp"
+        android:layout_marginTop="336dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
+        android:text="Antikluif schotel"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/maaltijdpanbutton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="336dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
         android:text="Maaltijd pan"
         android:textColor="@color/black"
         android:visibility="invisible"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="0.988"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/antikluiftext2"
-        android:layout_width="173dp"
+    <Button
+        android:id="@+id/Kippelingpanbutton"
+        android:layout_width="200dp"
         android:layout_height="55dp"
-        android:text="antikluif schotel"
-        android:textColor="@color/black"
-        android:visibility="invisible"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/kippelingtext"
-        android:layout_width="173dp"
-        android:layout_height="55dp"
+        android:layout_marginTop="336dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
         android:text="Kippeling pan"
         android:textColor="@color/black"
         android:visibility="invisible"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="0.988"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/knakpanxxltext"
-        android:layout_width="173dp"
+    <Button
+        android:id="@+id/knakpanXxlbutton"
+        android:layout_width="200dp"
         android:layout_height="55dp"
-        android:text="Knakpan XXL"
+        android:layout_marginTop="336dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/white"
+        android:fontFamily="monospace"
+        android:text="Knakpan Xxl"
         android:textColor="@color/black"
         android:visibility="invisible"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintHorizontal_bias="0.988"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
