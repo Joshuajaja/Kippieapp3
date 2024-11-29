@@ -134,9 +134,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val buttonClick5 = findViewById<ImageButton>(R.id.add_person_fab)
+        val buttonClick5 = findViewById<FloatingActionButton>(R.id.add_person_fab)
         buttonClick5.setOnClickListener {
-            val intent = Intent(this, about::class.java)
+            val intent = Intent(this, about ::class.java)
             startActivity(intent)
         }
 

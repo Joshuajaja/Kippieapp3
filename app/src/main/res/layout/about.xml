@@ -8,17 +8,7 @@
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
     android:foregroundTint="#000000"
-    tools:context=".account">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="343dp"
-        android:layout_height="69dp"
-        android:hint="hint"
-        app:layout_constraintBottom_toTopOf="@+id/chip"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656" />
+    tools:context=".`Over Kippie`">
 
     <View
         android:id="@+id/rectangle3"
@@ -55,35 +45,28 @@
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip"
-        android:layout_width="119dp"
-        android:layout_height="127dp"
-        android:background="#FF0000"
-        android:backgroundTint="#FF0000"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="452dp"
+        android:text="Over Kippie"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/rectangle3"
+        app:layout_constraintVertical_bias="0.973" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="launch big bomb to kimmy"
+        android:layout_width="259dp"
+        android:layout_height="443dp"
+        android:text="Kippie is hét toonaangevende franchisewinkelbedrijf op het gebied van grill- en maaltijdproducten. Het doel van Kippie is om iedere klant de beste kwaliteit en een gevarieerde keuze aan te bieden. Het gemak van de consument staat voorop. Het hoofdkantoor en de distributieafdeling van Kippie bevinden zich in Waddinxveen. Van daar uit worden de producten aan de winkels geleverd. In de winkels zelf worden de producten bereid en klaargemaakt voor de verkoop. Op dit moment telt Kippie meer dan 57 filialen die zijn gevestigd door heel Nederland. Op de werkvloer zijn kwaliteit, variatie en klantvriendelijkheid belangrijke waarden. Kippie biedt de consument iedere dag de meest verse, lekkere en vooral gemakkelijke producten aan."
         app:layout_constraintBottom_toBottomOf="@+id/rectangle5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chip"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="178dp">
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

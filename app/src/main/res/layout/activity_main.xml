@@ -21,19 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
-    <ImageButton
-        android:id="@+id/geelmenu2"
-        android:layout_width="96dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="6dp"
-        android:backgroundTint="#000000"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
-        app:srcCompat="@drawable/screenshot_2024_11_04_110251" />
-
     <TextView
         android:id="@+id/title"
         android:layout_width="420dp"
@@ -73,12 +60,10 @@
         android:backgroundTint="#000000"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/geelmenu2"
-        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/home_geel" />
+        app:srcCompat="@drawable/icons8_home_32" />
 
     <ImageButton
         android:id="@+id/witmenuhome"
@@ -92,7 +77,7 @@
         app:layout_constraintEnd_toStartOf="@+id/witkarretjehome"
         app:layout_constraintStart_toEndOf="@+id/eelHuisje"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:srcCompat="@drawable/screenshot_2024_11_04_110212" />
+        app:srcCompat="@drawable/icons8_restaurant_menu_64__2_" />
 
     <ImageButton
         android:id="@+id/witkarretjehome"
@@ -105,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/geelmenu"
         app:layout_constraintTop_toBottomOf="@+id/rectangle2"
-        app:srcCompat="@drawable/screenshot_2024_11_04_110229" />
+        app:srcCompat="@drawable/icons8_shopping_cart_52__2_" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -228,7 +213,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="4dp"
-            android:foreground="@drawable/icons8_person_100"
+            android:foreground="@drawable/icons8_about_50"
             app:backgroundTint="@color/kippie"
             app:fabSize="normal"
             app:layout_constraintEnd_toEndOf="parent"
