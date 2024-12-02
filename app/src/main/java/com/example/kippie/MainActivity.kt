@@ -140,6 +140,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val buttonClick6 = findViewById<FloatingActionButton>(R.id.add_alarm_fab)
+        buttonClick6.setOnClickListener {
+            val intent = Intent(this, MainActivityMap ::class.java)
+            startActivity(intent)
+        }
+
     }
     }
 

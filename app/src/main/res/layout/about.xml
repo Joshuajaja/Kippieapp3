@@ -69,4 +69,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.788" />
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="80dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="660dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icons8_home_32__2_"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle5"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
