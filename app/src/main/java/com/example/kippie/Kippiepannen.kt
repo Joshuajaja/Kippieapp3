@@ -1,7 +1,9 @@
 package com.example.kippie
 
+import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -83,6 +85,57 @@ class Kippiepannen : AppCompatActivity() {
         else if (pantype == "XXLpan"){
             loadXXL()
         }
+        val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+var y = 0
+        findViewById<Button>(R.id.antikluifbutton2).setOnClickListener {
+           y = y+1
+            editor.putInt("antikluif2", y)
+            editor.apply()
+        }
+        findViewById<Button>(R.id.antikluifbutton).setOnClickListener {
+            y = y+1
+            editor.putInt("antikluif", y)
+            editor.apply()
+        }
+        findViewById<Button>(R.id.nasipanbutton).setOnClickListener {
+            y = y+1
+            editor.putInt("nasipan", y)
+            editor.apply()
+        }
+        findViewById<Button>(R.id.knakpanXxlbutton).setOnClickListener {
+            y = y+1
+            editor.putInt("knakpanxxl", y)
+            editor.apply()
+        }
+        findViewById<Button>(R.id.satepanketjapbutton).setOnClickListener {
+            y = y+1
+            editor.putInt("satepanketjap", y)
+            editor.apply()
+        }
+        findViewById<Button>(R.id.aardappelpanbutton).setOnClickListener {
+            y = y+1
+            editor.putInt("aardappelpan", y)
+            editor.apply()
+        }
+        findViewById<Button>(R.id.maaltijdpanbutton).setOnClickListener {
+            y = y+1
+            editor.putInt("maaltijdpan", y)
+            editor.apply()
+        }
+        findViewById<Button>(R.id.Kippelingpanbutton).setOnClickListener {
+            y = y+1
+            editor.putInt("kippelingpan", y)
+            editor.apply()
+        }
+        findViewById<Button>(R.id.SnackpanXxlbutton).setOnClickListener {
+            y = y+1
+            editor.putInt("snackpanxxl", y)
+            editor.apply()
+        }
+
+
+
         }
 
     }
