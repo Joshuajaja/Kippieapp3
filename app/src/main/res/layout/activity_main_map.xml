@@ -59,8 +59,8 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="114dp"
-        android:layout_height="87dp"
+        android:layout_width="96dp"
+        android:layout_height="76dp"
         android:layout_marginTop="660dp"
         android:backgroundTint="#000000"
         android:scaleType="fitXY"
