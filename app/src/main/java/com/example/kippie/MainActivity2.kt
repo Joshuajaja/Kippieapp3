@@ -1,5 +1,6 @@
 package com.example.kippie
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.MotionEvent
@@ -60,5 +61,16 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
     }
+    val sharedPreferences = getSharedPreferences("pannen", MODE_PRIVATE)
+    val antikluifpan = sharedPreferences.getInt("antikluif", 0)
+    val antikluifpan2 = sharedPreferences.getInt("antikluif2", 0)
+    val nasipan = sharedPreferences.getInt("nasipan", 0)
+    val knakpanxxl = sharedPreferences.getInt("knakpanxxl", 0)
+    val satepanketjap = sharedPreferences.getInt("satepanketjap", 0)
+    val aardappelpan = sharedPreferences.getInt("aardappelpan", 0)
+    val maaltijdpan = sharedPreferences.getInt("maaltijdpan", 0)
+    val kippelingpan = sharedPreferences.getInt("kippelingpan", 0)
+    val snackpanxxl = sharedPreferences.getInt("snackpanxxl", 0)
 }}
