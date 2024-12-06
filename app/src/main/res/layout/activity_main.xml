@@ -241,6 +241,36 @@
             app:layout_constraintEnd_toStartOf="@+id/add_person_fab"
             app:layout_constraintTop_toTopOf="@+id/add_person_fab" />
 
+        <view
+            android:id="@+id/view2"
+            class="android.widget.ActionMenuView"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="#000000"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
+
+        <view
+            android:id="@+id/view"
+            class="android.widget.ActionMenuView"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="#000000"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.221" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
