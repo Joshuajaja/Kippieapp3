@@ -1,13 +1,43 @@
 package com.example.kippie
 
 import android.content.Context
+import kotlin.collections.List
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.MotionEvent
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
+data class Product(val name: String, val quantity: Int)
+
+class ProductAdapter(private val products: List<Product>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
+
+    class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val nameTextView: TextView = itemView.findViewById(R.id.productName)
+        val quantityTextView: TextView = itemView.findViewById(R.id.productQuantity)
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_product, parent, false)
+        return ProductViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
+        val product = products[position]
+        holder.nameTextView.text = product.name
+        holder.quantityTextView.text = product.quantity.toString()
+    }
+
+    override fun getItemCount() = products.size
+}
 
 class MainActivity2 : AppCompatActivity() {
 
@@ -19,6 +49,41 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+
+
+        // Find the RecyclerView
+        val recyclerView: RecyclerView = findViewById(R.id.recyclerview)
+
+        // Set up a LinearLayoutManager (or GridLayoutManager if you prefer)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+
+        val sharedPreferences = getSharedPreferences("pannen", MODE_PRIVATE)
+        val antikluifpan = sharedPreferences.getInt("antikluif", 0)
+        val antikluifpan2 = sharedPreferences.getInt("antikluif2", 0)
+        val nasipan = sharedPreferences.getInt("nasipan", 0)
+        val knakpanxxl = sharedPreferences.getInt("knakpanxxl", 0)
+        val satepanketjap = sharedPreferences.getInt("satepanketjap", 0)
+        val aardappelpan = sharedPreferences.getInt("aardappelpan", 0)
+        val maaltijdpan = sharedPreferences.getInt("maaltijdpan", 0)
+        val kippelingpan = sharedPreferences.getInt("kippelingpan", 0)
+        val snackpanxxl = sharedPreferences.getInt("snackpanxxl", 0)
+
+        val products = listOf(
+            Product("Antikluif Pan", sharedPreferences.getInt("antikluif", 0)),
+            Product("Antikluif Pan 2", sharedPreferences.getInt("antikluif2", 0)),
+            Product("Nasi Pan", sharedPreferences.getInt("nasipan", 0)),
+            Product("Knak Pan XXL", sharedPreferences.getInt("knakpanxxl", 0)),
+            Product("Sate Pan Ketjap", sharedPreferences.getInt("satepanketjap", 0)),
+            Product("Aardappel Pan", sharedPreferences.getInt("aardappelpan", 0)),
+            Product("Maaltijd Pan", sharedPreferences.getInt("maaltijdpan", 0)),
+            Product("Kippeling Pan", sharedPreferences.getInt("kippelingpan", 0)),
+            Product("Snack Pan XXL", sharedPreferences.getInt("snackpanxxl", 0))
+        ).filter { it.quantity > 0 } // Filter out products with a quantity of 0
+
+        val adapter = ProductAdapter(products)
+        recyclerView.adapter = adapter
+
+
     }
 
     override fun onTouchEvent(tochevent: MotionEvent): Boolean {
@@ -27,6 +92,7 @@ class MainActivity2 : AppCompatActivity() {
                 x1 = tochevent.x
                 y1 = tochevent.y
             }
+
             MotionEvent.ACTION_UP -> {
                 x2 = tochevent.x
                 y2 = tochevent.y
@@ -43,34 +109,14 @@ class MainActivity2 : AppCompatActivity() {
                         // Right swipe detected (left-to-right)
                         val i = Intent(this@MainActivity2, MainActivity::class.java)
                         startActivity(i)
-                    } else if (x1 < x2){val i = Intent(this@MainActivity2, scherm2::class.java)
-                        startActivity(i)}
+                    } else if (x1 < x2) {
+                        val i = Intent(this@MainActivity2, scherm2::class.java)
+                        startActivity(i)
+                    }
                 }
             }
         }
         return super.onTouchEvent(tochevent)  // Use super to maintain other touch events
     }
+}
 
-class MainActivity2 : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main2)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-
-    }
-    val sharedPreferences = getSharedPreferences("pannen", MODE_PRIVATE)
-    val antikluifpan = sharedPreferences.getInt("antikluif", 0)
-    val antikluifpan2 = sharedPreferences.getInt("antikluif2", 0)
-    val nasipan = sharedPreferences.getInt("nasipan", 0)
-    val knakpanxxl = sharedPreferences.getInt("knakpanxxl", 0)
-    val satepanketjap = sharedPreferences.getInt("satepanketjap", 0)
-    val aardappelpan = sharedPreferences.getInt("aardappelpan", 0)
-    val maaltijdpan = sharedPreferences.getInt("maaltijdpan", 0)
-    val kippelingpan = sharedPreferences.getInt("kippelingpan", 0)
-    val snackpanxxl = sharedPreferences.getInt("snackpanxxl", 0)
-}}
