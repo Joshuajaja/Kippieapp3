@@ -1,6 +1,5 @@
 package com.example.kippie
 
-import android.content.Context
 import kotlin.collections.List
 import android.content.Intent
 import android.os.Bundle
@@ -8,11 +7,10 @@ import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -58,16 +56,6 @@ class MainActivity2 : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         val sharedPreferences = getSharedPreferences("pannen", MODE_PRIVATE)
-        val antikluifpan = sharedPreferences.getInt("antikluif", 0)
-        val antikluifpan2 = sharedPreferences.getInt("antikluif2", 0)
-        val nasipan = sharedPreferences.getInt("nasipan", 0)
-        val knakpanxxl = sharedPreferences.getInt("knakpanxxl", 0)
-        val satepanketjap = sharedPreferences.getInt("satepanketjap", 0)
-        val aardappelpan = sharedPreferences.getInt("aardappelpan", 0)
-        val maaltijdpan = sharedPreferences.getInt("maaltijdpan", 0)
-        val kippelingpan = sharedPreferences.getInt("kippelingpan", 0)
-        val snackpanxxl = sharedPreferences.getInt("snackpanxxl", 0)
-
         val products = listOf(
             Product("Antikluif Pan", sharedPreferences.getInt("antikluif", 0)),
             Product("Antikluif Pan 2", sharedPreferences.getInt("antikluif2", 0)),
@@ -83,8 +71,32 @@ class MainActivity2 : AppCompatActivity() {
         val adapter = ProductAdapter(products)
         recyclerView.adapter = adapter
 
+// Calculate the total of all the variables in the array
+        val total = products.sumOf { it.quantity }
+        val totaalTextView = findViewById<TextView>(R.id.totaal)
+        totaalTextView.text = total.toString()
+        val editor = sharedPreferences.edit()
 
+
+        findViewById<Button>(R.id.bestelKnop).setOnClickListener{
+            // Reset all quantities to 0 in SharedPreferences
+            editor.putInt("antikluif", 0)
+            editor.putInt("antikluif2", 0)
+            editor.putInt("nasipan", 0)
+            editor.putInt("knakpanxxl", 0)
+            editor.putInt("satepanketjap", 0)
+            editor.putInt("aardappelpan", 0)
+            editor.putInt("maaltijdpan", 0)
+            editor.putInt("kippelingpan", 0)
+            editor.putInt("snackpanxxl", 0)
+
+            // Apply changes
+            editor.apply()
+
+            Toast.makeText(this, "U heeft besteld, bedankt!", Toast.LENGTH_SHORT).show()
+        }
     }
+
 
     override fun onTouchEvent(tochevent: MotionEvent): Boolean {
         when (tochevent.action) {
