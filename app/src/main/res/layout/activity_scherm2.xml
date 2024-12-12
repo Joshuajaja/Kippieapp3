@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#1B1B1B"
     tools:context=".MainActivity">
 
 
@@ -47,7 +47,7 @@
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -84,7 +84,7 @@
     <ScrollView
         android:layout_width="374dp"
         android:layout_height="488dp"
-        android:gravity="center"
+        android:gravity="clip_horizontal|center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
@@ -207,5 +207,43 @@
         </TableLayout>
     </ScrollView>
 
+
+    <ImageButton
+        android:id="@+id/withuisjemenu"
+        android:layout_width="112dp"
+        android:layout_height="99dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/geelmenu"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="@+id/rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/icons8_home_32__2_" />
+
+    <ImageButton
+        android:id="@+id/geelmenu"
+        android:layout_width="128dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/icons8_restaurant_menu_64__1_" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="112dp"
+        android:layout_height="96dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/geelmenu"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/icons8_shopping_cart_52__2_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

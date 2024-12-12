@@ -25,8 +25,8 @@
 
     <View
         android:id="@+id/rectangle2"
-        android:layout_width="407dp"
-        android:layout_height="612dp"
+        android:layout_width="426dp"
+        android:layout_height="730dp"
         android:background="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,5 +146,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.884" />
+
+    <ImageButton
+        android:id="@+id/geelkarretje"
+        android:layout_width="112dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/witmenucart"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/icons8_shopping_cart_52__1_" />
+
+    <ImageButton
+        android:id="@+id/witmenucart"
+        android:layout_width="128dp"
+        android:layout_height="97dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/icons8_restaurant_menu_64__2_" />
+
+    <ImageButton
+        android:id="@+id/withuisjecart"
+        android:layout_width="112dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/witmenucart"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle2"
+        app:srcCompat="@drawable/icons8_home_32__2_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
