@@ -37,8 +37,8 @@
 
     <View
         android:id="@+id/rectangle5"
-        android:layout_width="413dp"
-        android:layout_height="71dp"
+        android:layout_width="412dp"
+        android:layout_height="91dp"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,29 +56,29 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/rectangle3"
-        app:layout_constraintVertical_bias="0.973" />
+        app:layout_constraintVertical_bias="0.553" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="259dp"
-        android:layout_height="443dp"
+        android:layout_width="249dp"
+        android:layout_height="405dp"
         android:text="Kippie is hét toonaangevende franchisewinkelbedrijf op het gebied van grill- en maaltijdproducten. Het doel van Kippie is om iedere klant de beste kwaliteit en een gevarieerde keuze aan te bieden. Het gemak van de consument staat voorop. Het hoofdkantoor en de distributieafdeling van Kippie bevinden zich in Waddinxveen. Van daar uit worden de producten aan de winkels geleverd. In de winkels zelf worden de producten bereid en klaargemaakt voor de verkoop. Op dit moment telt Kippie meer dan 57 filialen die zijn gevestigd door heel Nederland. Op de werkvloer zijn kwaliteit, variatie en klantvriendelijkheid belangrijke waarden. Kippie biedt de consument iedere dag de meest verse, lekkere en vooral gemakkelijke producten aan."
         app:layout_constraintBottom_toBottomOf="@+id/rectangle5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.788" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="80dp"
         android:layout_height="79dp"
-        android:layout_marginTop="660dp"
+        android:layout_marginTop="704dp"
         android:backgroundTint="#000000"
         android:scaleType="fitXY"
         android:src="@drawable/icons8_home_32__2_"
         app:layout_constraintEnd_toEndOf="@+id/rectangle5"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
