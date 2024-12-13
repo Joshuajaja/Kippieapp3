@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         mAddFab = findViewById(R.id.FloatingActionButton)
 
         // FAB button
-        mAddAlarmFab = findViewById(R.id.add_alarm_fab)
+        mAddAlarmFab = findViewById(R.id.add_alarm_fab2)
         mAddPersonFab = findViewById(R.id.add_person_fab)
 
         // Also register the action name text, of all the FABs.
@@ -140,7 +140,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonClick6 = findViewById<FloatingActionButton>(R.id.add_alarm_fab)
+        val buttonClick6 = findViewById<FloatingActionButton>(R.id.add_alarm_fab2)
         buttonClick6.setOnClickListener {
             val intent = Intent(this, MainActivityMap ::class.java)
             startActivity(intent)

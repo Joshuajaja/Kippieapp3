@@ -23,14 +23,7 @@
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".tabactivity"
-            android:exported="false"
-            android:theme="@style/Theme.Kippie" />
-        <activity
             android:name=".MainActivityMap"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
             android:exported="false" />
         <activity
             android:name=".scherm2"

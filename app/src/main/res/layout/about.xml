@@ -6,31 +6,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
+    android:backgroundTint="#000000"
     android:foregroundTint="#000000"
-    tools:context=".`Over Kippie`">
+    tools:context=".about">
+
+    <View
+        android:id="@+id/rectangle10"
+        android:layout_width="401dp"
+        android:layout_height="640dp"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <View
         android:id="@+id/rectangle3"
         android:layout_width="413dp"
         android:layout_height="78dp"
         android:background="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/title2"
         android:layout_width="420dp"
         android:layout_height="78dp"
+        android:layout_marginBottom="15dp"
         android:background="#000000"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="KIPPIE"
         android:textColor="@color/kippie"
         android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/titel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -50,6 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="452dp"
+        android:textColor="@color/black"
         android:text="Over Kippie"
         app:layout_constraintBottom_toTopOf="@+id/rectangle5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,6 +73,7 @@
         android:id="@+id/textView4"
         android:layout_width="249dp"
         android:layout_height="405dp"
+        android:textColor="@color/black"
         android:text="Kippie is hét toonaangevende franchisewinkelbedrijf op het gebied van grill- en maaltijdproducten. Het doel van Kippie is om iedere klant de beste kwaliteit en een gevarieerde keuze aan te bieden. Het gemak van de consument staat voorop. Het hoofdkantoor en de distributieafdeling van Kippie bevinden zich in Waddinxveen. Van daar uit worden de producten aan de winkels geleverd. In de winkels zelf worden de producten bereid en klaargemaakt voor de verkoop. Op dit moment telt Kippie meer dan 57 filialen die zijn gevestigd door heel Nederland. Op de werkvloer zijn kwaliteit, variatie en klantvriendelijkheid belangrijke waarden. Kippie biedt de consument iedere dag de meest verse, lekkere en vooral gemakkelijke producten aan."
         app:layout_constraintBottom_toBottomOf="@+id/rectangle5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,14 +83,14 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="80dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="704dp"
+        android:layout_width="97dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="648dp"
         android:backgroundTint="#000000"
         android:scaleType="fitXY"
         android:src="@drawable/icons8_home_32__2_"
         app:layout_constraintEnd_toEndOf="@+id/rectangle5"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
