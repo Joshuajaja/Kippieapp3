@@ -45,8 +45,8 @@
 
     <View
         android:id="@+id/rectangle7"
-        android:layout_width="413dp"
-        android:layout_height="71dp"
+        android:layout_width="410dp"
+        android:layout_height="99dp"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
