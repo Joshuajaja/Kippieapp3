@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
         // visible only when Parent FAB button is clicked So
         // we have to handle the Parent FAB button first, by
         // using setOnClickListener you can see below
-        mAddFab.setOnClickListener(View.OnClickListener {
+        mAddFab.setOnClickListener {
             (if (!isAllFabsVisible!!) {
                 // when isAllFabsVisible becomes true make all
                 // the action name texts and FABs VISIBLE
@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
                 // have set the sub FABs visibility to GONE
                 false
             }).also { isAllFabsVisible = it }
-        })
+        }
         // below is the sample action to handle add person FAB. Here it shows simple Toast msg.
         // The Toast will be shown only when they are visible and only when user clicks on them
 

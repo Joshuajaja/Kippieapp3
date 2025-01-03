@@ -41,13 +41,6 @@ class ProductAdapter(private val products: List<Product>) : RecyclerView.Adapter
 }
 
 class MainActivity2 : AppCompatActivity() {
-    // Make sure to use the FloatingActionButton for all the FABs
-    private lateinit var mAddFab: FloatingActionButton
-    private lateinit var mAddAlarmFab: FloatingActionButton
-    private lateinit var mAddPersonFab: FloatingActionButton
-
-
-
     // to check whether sub FAB buttons are visible or not.
     private var isAllFabsVisible: Boolean? = null
     internal var x1: Float = 0.toFloat()
@@ -59,67 +52,6 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        // Register all the FABs with their IDs This FAB button is the Parent
-        mAddFab = findViewById(R.id.FloatingActionButton)
-
-        // FAB button
-        mAddAlarmFab = findViewById(R.id.add_alarm_fab2)
-        mAddPersonFab = findViewById(R.id.add_person_fab)
-
-        // Also register the action name text, of all the FABs.
-        mAddAlarmFab.visibility = View.GONE
-        mAddPersonFab.visibility = View.GONE
-
-        // make the boolean     variable as false, as all the
-        // action name texts and all the sub FABs are invisible
-        isAllFabsVisible = false
-
-        // We will make all the FABs and action name texts
-        // visible only when Parent FAB button is clicked So
-        // we have to handle the Parent FAB button first, by
-        // using setOnClickListener you can see below
-        mAddFab.setOnClickListener(View.OnClickListener {
-            (if (!isAllFabsVisible!!) {
-                // when isAllFabsVisible becomes true make all
-                // the action name texts and FABs VISIBLE
-                mAddAlarmFab.show()
-                mAddPersonFab.show()
-
-
-                // make the boolean variable true as we
-                // have set the sub FABs visibility to GONE
-                true
-            } else {
-                // when isAllFabsVisible becomes true make
-                // all the action name texts and FABs GONE.
-                mAddAlarmFab.hide()
-                mAddPersonFab.hide()
-
-
-                // make the boolean variable false as we
-                // have set the sub FABs visibility to GONE
-                false
-            }).also { isAllFabsVisible = it }
-        })
-        val fab: View = findViewById(R.id.FloatingActionButton)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-                .setAction("Action", null)
-                .show()
-        }
-
-
-        val buttonClick5 = findViewById<FloatingActionButton>(R.id.add_person_fab)
-        buttonClick5.setOnClickListener {
-            val intent = Intent(this, about::class.java)
-            startActivity(intent)
-        }
-
-        val buttonClick6 = findViewById<FloatingActionButton>(R.id.add_alarm_fab2)
-        buttonClick6.setOnClickListener {
-            val intent = Intent(this, MainActivityMap::class.java)
-            startActivity(intent)
-        }
         // Find the RecyclerView
         val recyclerView: RecyclerView = findViewById(R.id.recyclerview)
 
